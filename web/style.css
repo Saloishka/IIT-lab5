@@ -1,0 +1,275 @@
+
+div.head {
+    max-width: 1480px;
+    background-color: #fef7d2;
+    padding: 10px;
+    border: 1px solid black;
+    float: top;
+}
+
+div.head img {
+    width: 50%;
+    height: auto;
+    margin-left: 375px;
+}
+
+
+
+div.title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: static;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    margin: 15px;
+    color: black;
+    font-variant: petite-caps;
+    font-style: italic;
+}
+
+nav a:hover {
+    color: rgb(153, 147, 79);
+}
+
+
+
+body {
+    color: #262626;
+    background-color: #ffffff 
+}   
+
+div.life {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: 1px solid black;
+    gap: 30px;
+
+    background-image: url("https://img.freepik.com/free-photo/pastel-yellow-vignette-concrete-textured-background_53876-124561.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+div.text {
+    line-height: 1.3;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    margin-left: 60px;
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+div.photo {
+    width: 50%;
+    margin-right: 20px;
+    padding: 20px
+}
+div.photo img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 17px;
+}
+
+
+
+
+
+
+.video-block {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center; 
+    width: 100%;
+  }
+  
+  .video-wrapper {
+    width: 35%; 
+    min-width: 250px;
+  }
+  
+  .video-wrapper video {
+    width: 100%; 
+    height: auto;
+    margin-top: 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .video-wrapper video:hover {
+    border-color: #007bff;
+  }
+
+
+
+div.list li{
+    font-size: 18px;
+} 
+
+div.list a{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: #000000;
+} 
+div.list a :hover{
+    color: rgb(153, 147, 79);
+}
+
+div.list2 dd{
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+} 
+
+div.list2 dt{
+    font-weight: bold;
+    margin: 7px;
+    text-align: center;
+    font-style: bold;
+    font-size: 18px;
+    font-style: bold;
+} 
+
+
+
+
+
+table{
+    width: 100%;
+    background-color: #fffdcc;
+}
+
+table thead{
+    background:rgb(172, 172, 253);
+}
+table thead th{
+    border: 1px solid black;
+    padding: 12px;
+    font-size: 17px;
+    color: #000000;
+    font-variant: petite-caps;
+    font-weight: bold;
+}
+
+table tbody{
+    background:#fef7d2;
+}
+
+table tbody td{
+     padding: 12px;
+    border: 1px solid black;
+    font-size: 17px;
+    color: #000000;
+}
+table  a{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: #000000;
+}
+table a:hover{
+    color: rgb(153, 147, 79);
+}
+
+table tbody tr{
+text-align: center;
+}
+
+ i + i {
+    color: red;
+}
+
+b > i {
+    color: green;
+}
+
+span.bold  {
+    font-weight: bold;
+}
+div.links a{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+div.links a.links1:visited {
+    color: red;
+ }
+ 
+ div.links a.links2:link {
+     color: green;
+ }
+ 
+ div.links a.links3:active {
+     color: #e99a66;
+ }
+
+ div.list2 dd:before {
+    content: "\27A4";
+    margin-right: 5px;
+ }
+
+ 
+ div.list2 dt:after {
+    content: "\2757";
+ }
+
+ div.list2 dl dt:first-child {
+    color: rgb(95, 0, 44);
+  }
+
+    .highlight {
+    background-color: lightyellow;
+    border-radius: 4px;
+  }
+
+#sideMenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 100vh;
+  background-color: #fef7d2;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;;
+}
+
+#sideMenu button {
+  background-color: white;
+  border: 1px solid black;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#sideMenu button:hover {
+  background-color: rgb(222, 214, 128);
+}
+
+.print {
+font-family:"lucida console"; 
+}
+
+ #skorodog {
+      position: fixed;
+      width: 130px;
+      height: 130px;
+    }

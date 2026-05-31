@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Творчість</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sideMenu.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="head">
+        <a href="index.html#Pavlo">
+            <img src="images/tattoo-Photoroom2.png" alt="напис Павло Скоропадськйи">
+         </a>
+         
+         <nav>
+             <a href="index.html">Головна</a>
+             <a href="map.html">Мапа</a>
+             <a href="politics.html">Діяльність</a>
+             <a href="art.html">Творчість</a>
+         </nav>
+     </div>  
+</header>
+
+<aside id="sideMenu">
+  <button data-action="home">🏠</button>
+  <button data-action="map">🗺️</button>
+  <button data-action="politics">⚖️</button>
+  <button data-action="art">🎨</button>
+  <button data-action="wiki">🌐</button>
+</aside>   
+
+<img id="skorodog" src="images/skorodog.jpg" alt="пес">
+
+<div class="title">
+    <p>Короткі відео</p>
+    </div>
+</div>
+
+<div class="video-block">
+    <div class="video-wrapper">
+      <video src="video/BestHetman.mp4" controls></video>
+      <video src="video/Chilledit.mp4" controls></video>
+      <video src="video/Cutedit.mp4" controls></video>
+      <video src="video/Dark edit.mp4" controls></video>
+      <video src="video/Deepdarkedit.mp4" controls></video>
+      <video src="video/heavyedit.mp4" controls></video>
+      <video src="video/HetmanOfAllUkraine.mp4" controls></video>
+      <video src="video/kapitalism.mp4" controls></video>
+      <video src="video/slide.mp4" controls></video>
+      <video src="video/Slide_dark.mp4" controls></video>
+      <video src="video/ВільнеКозацтво.mp4" controls></video>
+      <video src="video/Сила.MP4" controls></video>
+      <video src="video/тян.mp4" controls></video>
+      <video src="video/Справжній гетьман.mp4" controls></video>
+      <video src="video/УНР.mp4" controls></video>
+      <video src="video/samurai.mp4" controls></video>
+      </div>
+</div>
+
+<script>
+const img = document.getElementById("skorodog");
+
+  img.ondragstart = () => false;
+
+  img.addEventListener("mousedown", function (e) {
+    e.preventDefault(); 
+
+    const shiftX = e.clientX - img.offsetLeft;
+    const shiftY = e.clientY - img.offsetTop;
+
+    function moveAt(e) {
+      img.style.left = e.clientX - shiftX + "px";
+      img.style.top = e.clientY - shiftY + "px";
+    }
+
+    document.addEventListener("mousemove", moveAt);
+
+    document.addEventListener("mouseup", function stop() {
+      document.removeEventListener("mousemove", moveAt);
+      document.removeEventListener("mouseup", stop);
+    });
+  });
+</script>
+</body>
+</html>
