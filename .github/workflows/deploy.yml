@@ -18,7 +18,7 @@ jobs:
       with:
         dockerfile: Dockerfile
         ignore: DL3008
-
+        
     # Логінимося в Docker Hub через GitHub Secrets
     - name: Log in to Docker Hub
       uses: docker/login-action@v3
@@ -29,7 +29,6 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
       with:
-        context: ./lab5            
-        file: ./lab5/Dockerfile
+        context: .
         push: true
         tags: saloishka/gcp-web-site-lab5:latest
